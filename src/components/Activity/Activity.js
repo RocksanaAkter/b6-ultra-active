@@ -28,18 +28,8 @@ const Activity = () => {
                 }
             </div>
             <div className="cart-container">
-                {/* {/* <h2>Activity Details</h2>
-                <div>
-                    <div>
-<p>Challenge time: {cart.length}</p>
-                    </div>
-                    <div>
-<p>Break Time:</p>
-                    </div>
-                </div>
-                calculation  */}
-                <Cart cart={cart}></Cart>
-                </div>
+                  <Cart cart={cart}></Cart>
+             </div>
                 
         </div>
     );
