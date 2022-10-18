@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './Activity.css'
 import Product from '../Product/Product.js'
+import Cart from '../Cart/Cart';
 const Activity = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -27,7 +28,7 @@ const Activity = () => {
                 }
             </div>
             <div className="cart-container">
-                <h2>Activity Details</h2>
+                {/* {/* <h2>Activity Details</h2>
                 <div>
                     <div>
 <p>Challenge time: {cart.length}</p>
@@ -36,7 +37,10 @@ const Activity = () => {
 <p>Break Time:</p>
                     </div>
                 </div>
-                calculation</div>
+                calculation  */}
+                <Cart cart={cart}></Cart>
+                </div>
+                
         </div>
     );
 };

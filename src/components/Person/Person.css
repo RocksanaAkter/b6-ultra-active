@@ -1,0 +1,22 @@
+.person-name{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 10px;
+}
+.person-name img{
+    width: 60px;
+    height: 60px;
+    border-radius: 25px;
+}
+.person-name p{
+    font-weight: 500;
+    font-size: 18px;
+    
+}
+
+.person-info {
+    margin-top: 0;
+    background-color: gainsboro;
+    border-radius: 10px;
+}
