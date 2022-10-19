@@ -14,10 +14,10 @@ const Activity = () => {
     []);
 
     const handleAddToCart = (product) =>{
-        console.log(product)
         const newCart = [...cart, product];
         setCart(newCart);
     }
+    
     return (
         <div className='activity-container'>
             <div className="products-container">
