@@ -14,6 +14,8 @@ const [bellTime, setBreakTime]=useState(0);
 const handleBreak = (breakTime) =>{
     setBreakTime(breakTime);
 }
+
+const calc= total+ bellTime;
     return (
         <div className='cart'>
             <div className='person-info'>
@@ -25,14 +27,14 @@ const handleBreak = (breakTime) =>{
             </div>
             <h3>Activity Details</h3>
                 <div>
-                    <div className='challenge-time'>
-                        <p>Challenge time: {total} minute</p>
+                    <div className='time'>
+                        <p className='cart-text'>Challenge time: {total} minute</p>
                     </div>
-                    <div>
-                        <p>Break Time: {bellTime}</p>
+                    <div className='time'>
+                        <p className='cart-text'>Break Time: {bellTime}</p>
                     </div>
                 </div>
-                calculation
+               <div><h3>Total Challenge Time: {calc}</h3></div>
          </div>
     
     );

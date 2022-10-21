@@ -1,9 +1,21 @@
 .break{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 10px;
     border-radius: 10px;
-    padding: 10px 8px;
     background-color:  gainsboro;
+    padding: 10px 8px;
+}
+
+.break-btn{
+    
+    border-radius: 25px;
+    padding: 10px 8px;
+}
+
+.break-btn:hover {
+    background-color:aquamarine;
 }
 
 .break p{
