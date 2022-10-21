@@ -3,7 +3,8 @@
     align-items: center;
     gap: 10px;
     margin-left: 10px;
-    padding-top: 12px;
+    margin: 0;
+    
 }
 .person-name img{
     width: 60px;
@@ -16,8 +17,3 @@
     
 }
 
-.person-info {
-    margin-top: 0;
-    background-color: gainsboro;
-    border-radius: 10px;
-}

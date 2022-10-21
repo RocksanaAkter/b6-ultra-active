@@ -25,7 +25,7 @@
 }
 .btn-cart{
     width: 100%;
-    background-color: burlywood;
+    background-color: rgb(157, 153, 89);
     border: none;
     /* position: absolute; */
     /* bottom: 0; */
@@ -38,6 +38,6 @@
     margin-right: 6px;
 }
 .btn-cart:hover{
-    background-color: rgb(236, 136, 99);
+    background-color: rgb(164, 110, 44);
     
 }

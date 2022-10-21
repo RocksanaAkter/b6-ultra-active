@@ -18,23 +18,23 @@ const handleBreak = (breakTime) =>{
 const calc= total+ bellTime;
     return (
         <div className='cart'>
-            <div className='person-info'>
+            <div className='cart-info'>
                 <Person></Person>
             </div>
             <div>
-                <h3>Add A Break</h3>
+                <h3 className='cart-heading'>Add A Break</h3>
                 <Break handleBreak={handleBreak}></Break>
             </div>
-            <h3>Activity Details</h3>
+            <h3 className='cart-heading'>Activity Details</h3>
                 <div>
-                    <div className='time'>
+                    <div className='cart-info'>
                         <p className='cart-text'>Challenge time: {total} minute</p>
                     </div>
-                    <div className='time'>
+                    <div className='cart-info'>
                         <p className='cart-text'>Break Time: {bellTime}</p>
                     </div>
                 </div>
-               <div><h3>Total Challenge Time: {calc}</h3></div>
+               <div><h3 className='cart-heading'>Total Challenge Time: {calc}</h3></div>
          </div>
     
     );

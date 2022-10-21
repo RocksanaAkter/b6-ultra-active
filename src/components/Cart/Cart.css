@@ -2,6 +2,22 @@
     position: sticky;
     top: 0;
     padding: 20px 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5)
+}
+
+.cart-info{
+    padding: 4px 4px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 1px 0px gray;
+    background-color:rgba(244, 248, 248, 0.793); 
+    margin-bottom: 20px;
+    color: rgb(61, 61, 109);
+}
+
+.cart-heading{
+    background-color: rgb(242, 236, 146);
+    padding: 10px 10px;
 }
 
 .cart-text{
@@ -9,10 +25,8 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: large;
 }
-.time{
-    padding: 10px 4px;
-    border-radius: 10px;
-    background-color: gainsboro;
-    margin-bottom: 20px;
-}
+
+
+
+
 

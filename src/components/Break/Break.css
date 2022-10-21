@@ -3,19 +3,20 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    border-radius: 10px;
-    background-color:  gainsboro;
-    padding: 10px 8px;
+    
 }
 
 .break-btn{
-    
+    font-size: 12px;
+    font-weight: 700;
+    border: 5px;
     border-radius: 25px;
-    padding: 10px 8px;
+    padding: 20px 20px;
+    color: rgb(61, 61, 109);
 }
 
 .break-btn:hover {
-    background-color:aquamarine;
+    background-color: goldenrod;
 }
 
 .break p{
@@ -24,3 +25,4 @@
     background-color: white;
     font-weight: 600;
 }
+
