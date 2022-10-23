@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Break from '../Break/Break';
 import Person from '../Person/Person';
+import { addToDb } from '../utility/fakedb';
 import './Cart.css'
 
 const Cart = (props) => {
@@ -13,6 +14,7 @@ const [bellTime, setBreakTime]=useState(0);
 
 const handleBreak = (breakTime) =>{
     setBreakTime(breakTime);
+    addToDb(breakTime);
 }
 
 const calc= total+ bellTime;
@@ -34,7 +36,7 @@ const calc= total+ bellTime;
                         <p className='cart-text'>Break Time: {bellTime}</p>
                     </div>
                 </div>
-               <div><h3 className='cart-heading'>Total Challenge Time: {calc}</h3></div>
+               <div><h3 className='cart-heading'>Total Time: {calc} minutes</h3></div>
          </div>
     
     );

@@ -2,9 +2,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 100%;
     gap: 1rem;
     background-color: rgb(164, 110, 44);
-   
 }
 .headerText{
     color: white;
@@ -12,6 +12,7 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serifs;
     padding-bottom: 0;
 }
+
 .logoPic{
     height: 40px;
     width: 60px;

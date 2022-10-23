@@ -1,6 +1,7 @@
 .activity-container{
-    display: grid;
-    grid-template-columns: 3fr 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    /* grid-template-columns: 3fr 1fr; */
 }
 .products-container{
     display: grid;
@@ -17,4 +18,27 @@
     .products-container{
         grid-template-columns: repeat(2, 1fr);
     }
+    .cart-container{
+       margin-left: 30%; 
+    }
 }
+
+@media screen and (max-width: 687px) {
+    .products-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+.activity-container{
+    justify-content: center;
+    align-items: center;
+}
+
+
+}
+@media screen and (min-width: 1101px) {
+    .activity-container{
+        display: grid;
+        
+        grid-template-columns: 3fr 1fr;
+    }
+}
+
