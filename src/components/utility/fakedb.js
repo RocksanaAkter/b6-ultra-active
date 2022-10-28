@@ -1,15 +1,13 @@
 const addToDb = time => 
 {
-    let shoppingCart ; 
+    let shoppingCart = {} ; 
 
-    const storedCart = localStorage.getItem('Break Time');
-    if(storedCart){
-        shoppingCart = JSON.parse(storedCart);
-
-    }
-    else{
-        shoppingCart = {};
-    }
+    getStoredCart();
+    // const storedCart = localStorage.getItem('Break Time');
+    // if(storedCart){
+    //     shoppingCart = JSON.parse(storedCart);
+    // }
+    
 
     const quality = shoppingCart[time];
     if(quality){
@@ -21,7 +19,18 @@ const addToDb = time =>
     }
 
     localStorage.setItem('Break Time', JSON.stringify(shoppingCart));
+
+    
 }
 
-export {addToDb}
+const getStoredCart = () =>{
+    let shoppingCart = {} ; 
+    const storedCart = localStorage.getItem('Break Time');
+if(storedCart){
+    shoppingCart = JSON.parse(storedCart);
+}
+
+return shoppingCart;
+}
+export {addToDb, getStoredCart}
 

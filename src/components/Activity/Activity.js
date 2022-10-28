@@ -2,7 +2,8 @@ import React, { useEffect, useState } from 'react';
 import './Activity.css'
 import Product from '../Product/Product.js'
 import Cart from '../Cart/Cart';
-import { addToDb } from '../utility/fakedb';
+import { getStoredCart } from '../utility/fakedb';
+import Question from '../Question/Question';
 const Activity = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
@@ -14,6 +15,7 @@ const Activity = () => {
     },
     []);
 
+
     const handleAddToCart = (product) =>{
         const newCart = [...cart, product];
         setCart(newCart);
@@ -21,7 +23,8 @@ const Activity = () => {
     }
     
     return (
-        <div className='activity-container'>
+        <div>
+            <div className='activity-container'>
             <div className="products-container">
                 {
                     products.map(product=> <Product key={product.id}
@@ -34,6 +37,12 @@ const Activity = () => {
              </div>
                 
         </div>
+        <div>
+            <Question></Question>
+        </div>
+        </div>
+        
+
     );
 };
 

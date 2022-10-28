@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Break from '../Break/Break';
 import Person from '../Person/Person';
-import { addToDb } from '../utility/fakedb';
+import { addToDb, getStoredCart } from '../utility/fakedb';
 import './Cart.css'
 
 const Cart = (props) => {
@@ -11,6 +11,7 @@ for(const product of cart){
     total = total + product.duration;
 }
 const [bellTime, setBreakTime]=useState(0);
+
 
 const handleBreak = (breakTime) =>{
     setBreakTime(breakTime);
